@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: green;
+    border-style: outset;
+    border-color: grey;
+    border-radius: 25px;
+    color: black;
+}
+
+h1 {
+    font-size: 250%;
+    border-style: outset;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 25px;
+    display: flex;
+    flex: 0 0 300px;
+    justify-content: center;
+    padding: 5px;
+}
+
+li {
+    font-size: 150%;
+    display: inline-flex;
+    flex-direction: row;
+    flex: 0 0 300px;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+}
