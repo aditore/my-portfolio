@@ -1,25 +1,35 @@
+:root {
+    /*light greenish yellow*/
+    --backgroundcolor1: rgb(131, 156, 83);
+}
+
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: green;
-    border-style: outset;
-    border-color: grey;
-    border-radius: 25px;
+    background-color: var(--backgroundcolor1);
+    border-style: none;
     color: black;
 }
 
 h1 {
     font-size: 250%;
-    border-style: outset;
-    border-width: 2px;
+    border-style: none;
     border-color: grey;
-    border-radius: 25px;
     display: flex;
     flex: 0 0 300px;
     justify-content: center;
-    padding: 5px;
+    padding: 0px;
+}
+
+/*Anthony Ditore header*/
+#specialheader1 {
+    color: darkslategrey;
 }
 
 li {
@@ -29,5 +39,17 @@ li {
     flex: 0 0 300px;
     justify-content: center;
     margin: 5px;
-    padding: 10px;
+    padding: 8px;
+    padding-inline-start: 1px;
+    padding-inline-end: 40px;;
+}
+
+/*header links*/
+a {
+    color: darkslategrey;
+    background-color: var(--backgroundcolor1);
+}
+
+a:hover {
+    color: darkturquoise;
 }
