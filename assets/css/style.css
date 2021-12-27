@@ -6,8 +6,11 @@
 
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
+}
+
+main {
+    position: relative;
+    height: 100%;
 }
 
 header {
@@ -32,17 +35,107 @@ h1 {
     padding: 0px;
 }
 
-/*Anthony Ditore header*/
-#specialheader1 {
+h2 {
+    position: relative;
+    padding: 0.5rem 1rem;
+    background-color: var(--backgroundcolor1);
+    border: 2px solid darkslategrey;
+    border-radius: 8px;
     color: darkslategrey;
 }
 
-#specialheader1:hover {
+h2:hover {
+    font-size: 300%;
+    transition: 0.5s;
+}
+
+h3  {
+    position: relative;
+    left: 30px;
+    margin: -20px;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: darkslategrey;
+    padding: 10px;
+    background-color: #b9c6ae;
+}
+
+h3:hover {
+    font-size: 250%;
+    transition: 0.5s;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: darkslategrey;
+    
+}
+
+p {
+    width: fit-content;
+    line-height: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--backgroundcolor1);
+    border-style: none;
+}
+/*contact me form*/
+
+form {
+    max-width: 400px;
+  }
+  
+form p {
+    margin: 3% 0;
+  }
+  
+label {
+    display: block;
+  }
+  
+button {
+    padding: 10px;
+    color: #fff;
+    background-color: #13293d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+/*Anthony Ditore header*/
+.specialheader1 {
+    color: darkslategrey;
+    padding-right: 10px;
+}
+
+.specialheader1:hover {
     font-size: 400%;
     display: inline-flex;
     flex-direction: row;
     justify-content: left;
     flex: 0 0 500px;
+    transition: 0.5s;
+}
+
+/*article headers*/
+
+.section-headers {
+    width: fit-content;
 }
 
 /*header links*/
@@ -75,11 +168,31 @@ aside {
     display: block;
     background-color: #b9c6ae;
     padding: 10px;
+    margin-right: 20px;
     text-align: left;
-    float: right;
     border-style: solid;
     border-color: darkslategrey;
+    border-radius: 8px;
+    margin-top: 50px;
+    height: 100%;
+    
 }
+
+.entertext {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+.entertext, select {
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
+  }
+
+.entertext:hover, .checkbox:hover, 
+  select:hover, button:hover {
+    box-shadow: 0 0 5px darkslategrey;
+  }
 
 /*main*/
 
@@ -92,20 +205,19 @@ main {
 /*main body articles*/
 
 article {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    align-items: left;
     border-style: solid;
     border-color: darkslategrey;
+    border-radius: 8px;
+    background-color: #b9c6ae;
 }
 /*images*/
 
 /*food truck background*/
 img {
     position: absolute;
-    width: 100%;
+    width: 102%;
     height: 100%;
     z-index: -2;
     opacity: 0.4;
+    margin-top: -130px;
 }

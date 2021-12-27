@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 id="specialheader1">Anthony Ditore</h1>
+        <h1 class="specialheader1">Anthony Ditore</h1>
         <nav>
             <ul>
                 <li><a href="about-me">About Me</a></li>
@@ -26,19 +26,57 @@
     <main>
 
         <aside>
-            <h2>Contact ME!!</h2>
-            <li>email</li>
-            <li>github</li>
-            <li>linkedin</li>
+            <h2>Contact Me!</h2>
+            <form>
+                <p>
+                  <label for="username">Name:</label>
+                  <input class="entertext" type="text" placeholder="First and Last Name" />
+                </p>
+                <p>
+                  <label for="email">E-mail:</label>
+                  <input class="entertext" id="email" type="text" placeholder="me@example.com" />
+                </p>
+                <p>
+                  <label for="comment">Comment:</label>
+                  <textarea class="entertext" placeholder="How do you feel about my skills so far?"></textarea>
+                </p>
+                <p>
+                  <input class="checkbox" type="checkbox" />
+                  <label for="agreement">I would like Anthony Ditore to respond to my e-mail.</label>
+                </p>
+                <p>
+                  <button>Submit</button>
+                </p>
+              </form>
         </aside>
 
-        <article>
-            <h2>About Me</h2>
-            <h3>Hello to anyone looking at this page!</h3>
-            <p>My name is Anthony Ditore. I come from a long line line of hardworkers. I have only recently gotten into coding, so bear with the lack of content.</p>
-            <p>Some things I do don't just include my passion for learning new things. I also run the only Quiznos food truck in the world and can make you a pretty mean custom sandwich.</p>
-            <p>I hope you enjoy my portfolio website and reach out to ask me questions in the future!</p>
-        </article>
+        <section>
+            <h2 class="section-headers">About Me</h2>
+            <article>
+                <h3>Hello to anyone looking at this page!</h3>
+                <p>My name is Anthony Ditore. I come from a long line line of hardworkers. I have only recently gotten into coding, so bear with the lack of content.</p>
+                <p>Some things I do don't just include my passion for learning new things. I also run the only Quiznos food truck in the world and can make you a pretty mean custom sandwich.</p>
+                <p>I hope you enjoy my portfolio website and reach out to ask me questions in the future!</p>
+            </article>
+            <h2 class="section-headers">My Work</h2>
+            <article>
+                <h3>Check out what I have accomplished!</h3>
+                <ul>
+                    <li>Horiseon Homework - code refactor</li>
+                    <li>Quiznos Food Truck</li>
+                    <li>Github</li>                    
+                </ul>
+            </article>
+        </section>
     </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>e-mail:<a href="anthonyditore@gmail.com">anthonyditore@gmail.com</a></li>
+                <li>phone number:<a href="phonenumber">(555) 555-5555</a></li>
+            </ul>
+        </nav>
+        <h1 class= "specialheader1">Anthony Ditore</h1>
+    </footer>
 </body>
 </html>
