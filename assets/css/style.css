@@ -8,6 +8,8 @@ body {
 }
 
 header {
+    position: static;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +17,7 @@ header {
     background-color: var(--backgroundcolor1);
     border-style: none;
     color: black;
+    
 }
 
 h1 {
@@ -32,6 +35,15 @@ h1 {
     color: darkslategrey;
 }
 
+#specialheader1:hover {
+    font-size: 400%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: left;
+    flex: 0 0 500px;
+}
+
+/*header links*/
 li {
     font-size: 150%;
     display: inline-flex;
@@ -44,7 +56,6 @@ li {
     padding-inline-end: 40px;;
 }
 
-/*header links*/
 a {
     color: darkslategrey;
     background-color: var(--backgroundcolor1);
@@ -52,4 +63,14 @@ a {
 
 a:hover {
     color: darkturquoise;
+}
+
+/*images*/
+
+/*food truck background*/
+img {
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.4;
 }
