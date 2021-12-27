@@ -1,3 +1,4 @@
+
 :root {
     /*light greenish yellow*/
     --backgroundcolor1: rgb(131, 156, 83);
@@ -5,6 +6,8 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -17,7 +20,6 @@ header {
     background-color: var(--backgroundcolor1);
     border-style: none;
     color: black;
-    
 }
 
 h1 {
@@ -65,12 +67,45 @@ a:hover {
     color: darkturquoise;
 }
 
+/* side bar contact menu*/
+
+aside {
+    flex: 1;
+    order: 2;
+    display: block;
+    background-color: #b9c6ae;
+    padding: 10px;
+    text-align: left;
+    float: right;
+    border-style: solid;
+    border-color: darkslategrey;
+}
+
+/*main*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+/*main body articles*/
+
+article {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    border-style: solid;
+    border-color: darkslategrey;
+}
 /*images*/
 
 /*food truck background*/
 img {
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: -2;
     opacity: 0.4;
 }
