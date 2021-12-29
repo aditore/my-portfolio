@@ -14,35 +14,33 @@ main {
 }
 
 header {
-    position: static;
+    
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     background-color: var(--backgroundcolor1);
-    border-style: none;
-    color: black;
+    
 }
 
 h1 {
     font-size: 250%;
-    border-style: none;
-    border-color: grey;
+    
     display: flex;
     flex: 0 0 300px;
     justify-content: center;
-    padding: 0px;
+    
 }
 
 h2 {
-    position: static;
+    
     padding: 0.5rem 1rem;
     background-color: var(--backgroundcolor1);
     border: 2px solid darkslategrey;
     border-radius: 8px;
     color: darkslategrey;
-    display: inline-flex;
+    
 }
 
 .section-headers:hover {
@@ -102,8 +100,11 @@ footer {
 /*contact me form*/
 
 form {
+    position: relative;
     display: inline-flex;
     flex-direction: column;
+    top: 3vw;
+    left: 5.5vw;
   }
   
 form p {
@@ -126,13 +127,12 @@ button {
 /*Anthony Ditore header*/
 .specialheader1 {
     color: darkslategrey;
-    padding-right: 10px;
+    
 }
 
 .specialheader1:hover {
     font-size: 400%;
-    display: inline-flex;
-    flex-direction: row;
+
     justify-content: left;
     flex: 0 0 500px;
     transition: 0.5s;
@@ -148,18 +148,16 @@ button {
 li {
     font-size: 150%;
     display: inline-flex;
-    flex-direction: row;
-    flex: 0 0 300px;
+
     justify-content: center;
     margin: 5px;
-    padding: 8px;
+    
     padding-inline-start: 1px;
     padding-inline-end: 40px;;
 }
 
 a {
     color: darkslategrey;
-    background-color: var(--backgroundcolor1);
 }
 
 a:hover {
@@ -168,22 +166,24 @@ a:hover {
 
 /* side bar contact menu*/
 
+
 aside {
     background-color: #b9c6ae;
-    display: inline-flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex: 0 0 300px;
+    
     color: darkslategrey;
-    min-height: 100%;
-    height: 800px;
-    width: 25%;
-    padding: 0.5%;
+    
+    height: 85vh;
+    width: 25vw;
+    
     border-radius: 8px;
-    position: relative;
+    
+    
 }
 
 #contactmeheader {
+    position: relative;
+    top: 2.5vw;
+    left: 7vw;
     display: inline-block;
     text-align: center;
 }
@@ -222,19 +222,35 @@ article {
 }
 /*images*/
 
+#horiseonimg {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    transition: 0.5s;
+}
+
+#horiseonimg:hover {
+    transform: scale(1.5);
+}
 /*food truck background*/
 #backgroundimage {
     position: absolute;
-    width: 102%;
-    height: 100%;
+    width: 101vw;
+    height: 112vh;
     z-index: -2;
     opacity: 0.4;
-    margin-top: -130px;
+
 }
 
 /*twin and I*/
 #twins {
+    position: relative;
     border-radius: 50%;
+
+    width: 75%;
+    left: 2.5vw;
+    top: 2.5vw;
 }
 
 #twins:hover {
@@ -242,19 +258,3 @@ article {
 }
 
 /*media querey*/
-@media screen and (max-width: 768px) {
-    header, main {
-        
-    }
-
-    section {
-        padding-right: 0;
-    }
-
-    aside {
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        text-align: center;
-    }
-}
