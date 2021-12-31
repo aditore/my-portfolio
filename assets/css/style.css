@@ -1,4 +1,3 @@
-
 :root {
     /*light greenish yellow*/
     --backgroundcolor1: rgb(131, 156, 83);
@@ -6,41 +5,166 @@
 
 body {
     margin: 0;
+    background-image: url(../images/food_truck.jpg); 
+    background-size: cover;
+    background-position: center;
 }
 
-main {
-    position: relative;
-    height: 100%;
-}
-
+/* header in html contents */
 header {
-    
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     background-color: var(--backgroundcolor1);
-    
 }
 
 h1 {
     font-size: 250%;
-    
     display: flex;
     flex: 0 0 300px;
     justify-content: center;
+}
+
+/* Anthony Ditore header (within header and footer section of html) */
+.specialheader1 {
+    color: darkslategrey;
     
 }
 
+.specialheader1:hover {
+    font-size: 400%;
+    justify-content: left;
+    flex: 0 0 500px;
+    transition: 0.5s;
+}
+
+/* all lists on website included here (header, main and footer)*/
+
+li {
+    font-size: 150%;
+    display: inline-flex;
+    justify-content: center;
+    margin: 5px; 
+    padding-inline-start: 1px;
+    padding-inline-end: 40px;;
+}
+
+/* links for header and footer */
+
+a {
+    color: darkslategrey;
+}
+
+a:hover {
+    color: darkturquoise;
+}
+
+/* main in html contents */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
 h2 {
-    
     padding: 0.5rem 1rem;
     background-color: var(--backgroundcolor1);
     border: 2px solid darkslategrey;
     border-radius: 8px;
     color: darkslategrey;
+    font-size: 24px;
+    width: fit-content;
+}
+
+p {
+    width: fit-content;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+/* side bar contact menu*/
+
+aside {
+    background-color: #b9c6ae;
+    color: darkslategrey;
+    height: auto;
+    width: 25vw;
+    border-radius: 8px;
+}
+
+#contactmeheader {
+    position: relative;
+    top: 2.5vw;
+    left: 7vw;
+    display: inline-block;
+    text-align: center;
+}
+
+/*contact me form*/
+
+form {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    top: 3vw;
+    left: 5.5vw;
+    width: fit-content;
+  }
+  
+form p {
+    margin: 0;
+  }
+  
+label {
+    display: block;
+  }
+  
+button {
+    padding: 10px;
+    color: darkslategrey;
+    background-color: var(--backgroundcolor1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+.entertext {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+.entertext, select {
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
+  }
+
+.entertext:hover, .checkbox:hover, 
+  select:hover, button:hover {
+    box-shadow: 0 0 5px darkslategrey;
+  }
+
+/* section within main html */
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    margin: auto;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding-bottom: 10px;
+    color: darkslategrey;
     
+}
+
+.section-headers {
+    width: fit-content;
 }
 
 .section-headers:hover {
@@ -64,23 +188,25 @@ h3:hover {
     font-size: 250%;
     transition: 0.5s;
 }
-section {
-    display: flex;
+
+/* list for "My Work" */
+
+.worklist {
     flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: darkslategrey;
-    
+    padding: 20px;
 }
 
-p {
-    width: fit-content;
-    line-height: 1.5;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+
+/*section articles*/
+
+article {
+    border-style: solid;
+    border-color: darkslategrey;
+    border-radius: 8px;
+    background-color: #b9c6ae;
 }
+
+/* footer */
 
 footer {
     position: static;
@@ -91,163 +217,31 @@ footer {
     align-items: center;
     padding: 1%;
     background-color: var(--backgroundcolor1);
-    border-style: none;
+    
 }
 
 .footerinline {
     padding-left: 20px;
 }
-/*contact me form*/
 
-form {
-    position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    top: 3vw;
-    left: 5.5vw;
-  }
-  
-form p {
-    margin: 0;
-  }
-  
-label {
-    display: block;
-  }
-  
-button {
-    padding: 10px;
-    color: darkslategrey;
-    background-color: var(--backgroundcolor1);
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-/*Anthony Ditore header*/
-.specialheader1 {
-    color: darkslategrey;
-    
-}
-
-.specialheader1:hover {
-    font-size: 400%;
-
-    justify-content: left;
-    flex: 0 0 500px;
-    transition: 0.5s;
-}
-
-/*article headers*/
-
-.section-headers {
-    width: fit-content;
-}
-
-/*header links*/
-li {
-    font-size: 150%;
-    display: inline-flex;
-
-    justify-content: center;
-    margin: 5px;
-    
-    padding-inline-start: 1px;
-    padding-inline-end: 40px;;
-}
-
-a {
-    color: darkslategrey;
-}
-
-a:hover {
-    color: darkturquoise;
-}
-
-/* side bar contact menu*/
-
-
-aside {
-    background-color: #b9c6ae;
-    
-    color: darkslategrey;
-    
-    height: 85vh;
-    width: 25vw;
-    
-    border-radius: 8px;
-    
-    
-}
-
-#contactmeheader {
-    position: relative;
-    top: 2.5vw;
-    left: 7vw;
-    display: inline-block;
-    text-align: center;
-}
-
-.entertext {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-.entertext, select {
-    padding: 1%;
-    outline: none;
-    border: 1.2px solid #b9C6ae;
-  }
-
-.entertext:hover, .checkbox:hover, 
-  select:hover, button:hover {
-    box-shadow: 0 0 5px darkslategrey;
-  }
-
-/*main*/
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-
-/*main body articles*/
-
-article {
-    border-style: solid;
-    border-color: darkslategrey;
-    border-radius: 8px;
-    background-color: #b9c6ae;
-}
 /*images*/
 
-#horiseonimg {
-    margin: 20px;
+.listpictures {
+    display: inline-block;
     padding: 20px;
-    width: 400px;
+    width: 250px;
     height: auto;
     transition: 0.5s;
 }
 
-#horiseonimg:hover {
-    transform: scale(1.5);
-}
-/*food truck background*/
-#backgroundimage {
-    position: absolute;
-    width: 101vw;
-    height: 112vh;
-    z-index: -2;
-    opacity: 0.4;
-
+.listpictures:hover {
+    transform: scale(2.0);
 }
 
 /*twin and I*/
 #twins {
     position: relative;
     border-radius: 50%;
-
     width: 75%;
     left: 2.5vw;
     top: 2.5vw;
@@ -258,3 +252,38 @@ article {
 }
 
 /*media querey*/
+@media screen and (max-width: 768px) {
+    header, main {
+        flex-direction: row;
+    }
+    
+    li {
+        display: block;
+        font-size: smaller;
+    }
+    section {
+        padding-right: 0;
+    }
+  
+    aside {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    form {
+        width: fit-content;
+    }
+
+    #twins {
+        flex-basis: content;
+        transform: scale(0.5);
+        
+    }
+
+    #twins:hover {
+        box-shadow: none;
+    }
+
+  }
