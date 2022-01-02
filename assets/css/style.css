@@ -193,6 +193,7 @@ article {
     border-color: darkslategrey;
     border-radius: 8px;
     background-color: #b9c6ae;
+    max-width: fit-content;
 }
 
 /* footer */
@@ -239,11 +240,6 @@ footer {
 /*media querey*/
 
 @media screen and (max-width: 1440px) {
-    header, main {
-        
-        
-    }
-
     li {
         display: block;
         font-size: smaller;
