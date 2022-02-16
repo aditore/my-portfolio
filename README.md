@@ -14,7 +14,7 @@ Anyone who visits this webpage will be able to navigate through the UI with the 
 
 They also will be able to follow any links on the page to seperate pages showing off my skills.
 
-![myportfolioscreenshot](assets/images/portfolio-screenshot.jpg)
+![myportfolioscreenshot](assets/images/myPort.gif)
 
 ## Link
 
