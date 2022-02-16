@@ -132,6 +132,7 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    margin-bottom: 10px;
   }
 
 .entertext {
@@ -239,6 +240,11 @@ footer {
 
 .footerinline {
     padding-left: 20px;
+}
+
+.footerUl {
+    display: flex;
+    font-size: x-small;
 }
 
 /*images*/
