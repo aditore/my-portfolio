@@ -44,6 +44,9 @@ h1 {
 
 /* all lists on website included here (header, main and footer)*/
 
+ul {
+    max-height: 500px;
+}
 li {
     font-size: 150%;
     display: inline-flex;
@@ -51,6 +54,11 @@ li {
     margin: 5px; 
     padding-inline-start: 1px;
     padding-inline-end: 40px;;
+}
+
+.list-group-item {
+    background-color: #b9C6ae;
+    border: none;
 }
 
 /* links for header and footer */
@@ -104,6 +112,10 @@ aside {
 }
 
 /*contact me form*/
+
+#contactMeHeader {
+    margin-top: 20px;
+}
 
 form p {
     margin: 0;
@@ -162,15 +174,16 @@ section {
 }
 
 h3  {
-    position: relative;
-    left: 30px;
-    margin: -20px;
+    color: var(--backgroundcolor1);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
     width: fit-content;
     border-style: solid;
     border-radius: 8px;
-    border-color: darkslategrey;
     padding: 10px;
-    background-color: #b9c6ae;
+    background-color: darkslategrey;
 }
 
 h3:hover {
@@ -185,10 +198,15 @@ h3:hover {
     padding: 20px;
 }
 
+.listFlex {
+    display: flex;
+    justify-content: space-between;
+}
 
 /*section articles*/
 
 article {
+    height: 100px;
     border-style: solid;
     border-color: darkslategrey;
     border-radius: 8px;
@@ -196,6 +214,16 @@ article {
     max-width: fit-content;
 }
 
+#resumeArticle {
+    height: auto;
+    border-color: #b9C6ae;
+    border-top-color: darkslategrey;
+    border-radius: 0%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+}
 /* footer */
 
 footer {
@@ -224,7 +252,7 @@ footer {
 }
 
 .listpictures:hover {
-    transform: scale(2.0);
+    transform: scale(1.5);
 }
 
 /*twin and I*/

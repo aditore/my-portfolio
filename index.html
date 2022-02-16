@@ -7,24 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="cssreset" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="specialheader1">Anthony Ditore</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-work">My Work</a></li>
-                <li><a href="#contactmeheader">Contact Me</a></li>
+    <header class="col-12">
+        <h1 class="header specialheader1">Anthony Ditore</h1>
+        <nav class="navbar">
+            <ul class="m-auto">
+                <li><a class="list-group-item-action" href="#my-work">My Work</a></li>
+                <li><a class="list-group-item-action" href="#contactmeheader">Contact Me</a></li>
+                <li><a class="list-group-item-action" href="#about-me">About Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <aside>
-            <h2 id="contactmeheader">Contact Me!</h2>
+        <aside class="col-3 overflow-auto">
+            <h2 id="contactMeHeader">Contact Me!</h2>
             <img id="twins" src="assets/images/image.jpg" alt="me and my twin in Vegas">
             <form>
                 <p>
@@ -38,37 +39,66 @@
                 <p>
                   <button>Submit</button>
                 </p>
-              </form>
+            </form>
+        </br>
+            <article class="col align-items-center" id="resumeArticle">
+                <h2>Resume</h2>
+                <p>Link to my resume below!</p>
+                <a href="" class="btn btn-success">Click Here</a>
+            </article>
         </aside>
         <section>
-            <h2 id="about-me" class="section-headers">About Me</h2>
-            <article>
+            </br>
+            <h2 id="about-me" class="header section-headers">About Me</h2>
+            <article class="col-12 overflow-auto">
                 <h3>Hello to anyone looking at this page!</h3>
                 <p>My name is Anthony Ditore. I come from a long line of hardworkers. I have only recently gotten into coding, so bear with the lack of content.</p>
                 <p>Some things I do don't just include my passion for learning new things. I also run the only Quiznos food truck in the world and can make you a pretty mean custom sandwich.</p>
                 <p>I hope you enjoy my portfolio website and reach out to ask me questions in the future!</p>
             </article>
-            <h2 id="my-work" class="section-headers">My Work</h2>
-            <article>
+            </br>
+            <h2 id="my-work" class="header section-headers">My Work</h2>
+            <article class="col-12 overflow-auto">
                 <h3>Check out what I have accomplished!</h3>
-                <ul>
-                    <li class="worklist"> 
-                        <h2>Horiseon Code Refactor</h2>
-                        <a href="https://github.com/aditore/Horiseon-Home-Page">
-                        <img id="horiseonimg" class="listpictures" src="assets/images/horiseon-home-page-top.png" alt="horiseon-home-page-ss">
-                        </a>
+                <ul class="list-group col-12 align-items-center">
+                    <h2 class="col-12 text-center">Horiseon Code Refactor</h2>
+                    <li class="worklist col-12">
+                        <ul class="list-inline listFlex"> 
+                            <li class="col-4">
+                                <a class="" href="https://github.com/aditore/Horiseon-Home-Page">
+                                    <img id="horiseonimg" class="listpictures" src="assets/images/horiseon-home-page-top.png" alt="horiseon-home-page-ss">
+                                </a>
+                            </li>
+                            <li class="col-7 listPadding justify-content-end">
+                                <p>This is the Horiseon Code Refactor assignemnt we did in class.</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="worklist"> 
-                        <h2>Quiznos Food Truck</h2>
-                        <a href="https://www.facebook.com/QuiznosTruck">
-                            <img id="foodtruckimg2" class="listpictures" src="assets/images/food_truck.jpg" alt="quiznos-food-truck">
-                        </a>
+                    <h2 class="col-12 text-center">Quiznos Food Truck</h2>
+                    <li class="worklist col-12">
+                        <ul class="list-inline listFlex">
+                            <li class="col-4"> 
+                                <a href="https://www.facebook.com/QuiznosTruck">
+                                    <img id="foodtruckimg2" class="listpictures" src="assets/images/food_truck.jpg" alt="quiznos-food-truck">
+                                </a>
+                            </li>
+                            <li class="col-7 listPadding justify-content-end">
+                                <p>Check out this sweet ride!</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="worklist"> 
-                        <h2>Github</h2>
-                        <a href="https://github.com/aditore">
-                            <img id="githubpng" class="listpictures" src="assets/images/github.png" alt="github logo">
-                        </a>
+                    <h2 class="col-12 text-center">Github</h2>
+                    <li class="worklist col-12">
+                        <ul class="list-inline listFlex">
+                            <li class="col-4">
+                                <a href="https://github.com/aditore">
+                                    <img id="githubpng" class="listpictures" src="assets/images/github.png" alt="github logo">
+                                </a>
+                            </li>
+                            <li class="col-7 listPadding justify-content-end">
+                                <p>Github holla!</p>
+                            </li>
+                        </ul> 
                     </li>                    
                 </ul>
             </article>
@@ -76,9 +106,9 @@
     </main>
     <footer>
         <nav>
-            <ul>
-                <li>e-mail:<a class="footerinline" href="anthonyditore@gmail.com">anthonyditore@gmail.com</a></li>
-                <li>phone number:<a class="footerinline" href="phonenumber">(555) 555-5555</a></li>
+            <ul class="list-group-horizontal">
+                <li>e-mail:<a class="list-group-item-action footerinline" href="anthonyditore@gmail.com">anthonyditore@gmail.com</a></li>
+                <li>phone number:<a class="list-group-item-action footerinline" href="phonenumber">(555) 555-5555</a></li>
             </ul>
         </nav>
         <h1 class= "specialheader1">Anthony Ditore</h1>
