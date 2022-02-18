@@ -37,8 +37,8 @@ h1 {
 }
 
 .specialheader1:hover {
-    font-size: 400%;
-    justify-content: left;
+    transform: scale(1.5);
+    justify-content: right;
     flex: 0 0 500px;
     transition: 0.5s;
 
@@ -189,12 +189,22 @@ section {
 }
 
 .section-headers {
-    width: fit-content;
+    width: auto;
 }
 
 .section-headers:hover {
-    font-size: 300%;
-    transition: 0.5s;
+    display: flex;
+    
+
+    width: auto;
+    align-items: right;
+
+    background-color: darkslategrey;
+    color: #b9C6ae;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 2s;
 }
 
 h3  {
@@ -304,8 +314,7 @@ footer {
     background-color: darkslategrey;
     color: #b9C6ae;
     border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     transition: 0.5s;
 }
 
@@ -313,13 +322,14 @@ footer {
 #twins { 
     border-radius: 50%;
     width: 75%;
+    box-shadow: 0 0 5px 5px darkslategrey;
 }
 
 #twins:hover {
     border-radius: 0;
     transform: scale(2.0);
     transition: 1s;
-    box-shadow: 0 0 5px 5px darkslategrey;
+    
 }
 
 /*media querey*/
