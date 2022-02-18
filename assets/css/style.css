@@ -20,6 +20,7 @@ header {
     align-items: center;
     padding: 1%;
     background-color: var(--backgroundcolor1);
+    max-height: 80px;
 }
 
 h1 {
@@ -39,6 +40,28 @@ h1 {
     font-size: 400%;
     justify-content: left;
     flex: 0 0 500px;
+    transition: 0.5s;
+
+    background-color: darkslategrey;
+    color: #b9C6ae;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+
+}
+
+.list-group-item-action:hover {
+    margin: auto;
+}
+
+.navHover:hover {
+    background-color: darkslategrey;
+    color: #b9C6ae;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: 0.5s;
 }
 
@@ -188,7 +211,14 @@ h3  {
 }
 
 h3:hover {
-    font-size: 250%;
+    transform: scale(1.5);
+    transition: 0.5s;
+
+    background-color: darkslategrey;
+    color: #b9C6ae;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: 0.5s;
 }
 
@@ -240,6 +270,17 @@ footer {
 
 .footerinline {
     padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footerinline:hover {
+    background-color: darkslategrey;
+    color: #b9C6ae;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
 }
 
 .footerUl {
@@ -259,6 +300,13 @@ footer {
 
 .listpictures:hover {
     transform: scale(1.5);
+
+    background-color: darkslategrey;
+    color: #b9C6ae;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
 }
 
 /*twin and I*/
@@ -268,6 +316,9 @@ footer {
 }
 
 #twins:hover {
+    border-radius: 0;
+    transform: scale(2.0);
+    transition: 1s;
     box-shadow: 0 0 5px 5px darkslategrey;
 }
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-For the second homework assignment of the UW coding bootcamp I made a portfolio webpage so that a company can view work samples of what I have created.
+I made a portfolio webpage so that a company can view work samples of what I have created.
 
 This project brings potential viewers of the coding work that I have done.
 
