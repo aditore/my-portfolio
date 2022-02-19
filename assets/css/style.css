@@ -367,6 +367,28 @@ footer {
         flex-basis: content;
         transform: scale(0.75);
     }
+
+    .listFlex {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: auto;
+        font-size: large;
+    }
+
+    .fitContentLi {
+        max-width: fit-content;
+    }
+
+    .footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 0;
+    }
+
+    .footerinline:hover {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
