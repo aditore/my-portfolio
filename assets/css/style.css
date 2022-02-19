@@ -389,6 +389,17 @@ footer {
     .footerinline:hover {
         margin: 0;
     }
+
+    h3:hover {
+        transform: scale(1);
+
+        background-color: darkslategrey;
+        color: #b9C6ae;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.5s;
+    }
 }
 
 @media screen and (max-width: 768px) {
