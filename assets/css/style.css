@@ -36,6 +36,10 @@ h1 {
     
 }
 
+.specialheader2 {
+    color: darkslategrey;
+}
+
 .specialheader1:hover {
     transform: scale(1.5);
     justify-content: right;
@@ -279,15 +283,17 @@ footer {
 }
 
 .footerinline {
-    padding-left: 20px;
+    padding-left: 40px;
     display: flex;
-    align-items: center;
+    align-items: end;
+    width: fit-content;
 }
 
 .footerinline:hover {
     background-color: darkslategrey;
     color: #b9C6ae;
     border-radius: 10px;
+    margin-left: 40px;
     padding-left: 10px;
     padding-right: 10px;
     transition: 0.5s;
