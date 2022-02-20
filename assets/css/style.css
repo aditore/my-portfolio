@@ -138,6 +138,16 @@ aside {
     align-items: center;
 }
 
+.resume {
+    display: flex;
+    flex-direction: row;
+}
+
+.resumeBtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /*contact me form*/
 
 #contactMeHeader {
