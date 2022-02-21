@@ -30,6 +30,10 @@ h1 {
     justify-content: center;
 }
 
+.mediaHeader {
+    display: none;
+}
+
 /* Anthony Ditore header (within header and footer section of html) */
 .specialheader1 {
     color: darkslategrey;
@@ -427,7 +431,7 @@ footer {
   
     aside {
         padding: 60px;
-        min-width: 85%;
+        min-width: 100%;
         border-style: solid;
         border-color: darkslategrey;
     }
@@ -444,4 +448,22 @@ footer {
         box-shadow: none;
     }
 
+    .specialheader1 {
+        display: none;
+    }
+
+    .specialheader2 {
+        display: none;
+    }
+
+    .inlineUl {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mediaHeader {
+        display: contents;
+        font-size: larger;
+        color: darkslategrey;
+    }
   }
