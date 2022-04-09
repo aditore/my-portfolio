@@ -15,31 +15,35 @@
 <body>
     <header class="col-12">
         <h1 class="header specialheader1">Anthony Ditore</h1>
-        <nav class="navbar">
-            <ul class="inlineUl m-auto">
+        <nav class="navbar navbarHead">
+            <ul class="inlineUl">
                 <li><a class="navHover list-group-item-action" href="#my-work">My Work</a></li>
-                <li><a class="navHover list-group-item-action" href="#contactmeheader">Contact Me</a></li>
+                <li><a class="navHover list-group-item-action" href="#contactMeHeader">Contact Me</a></li>
                 <li><a class="navHover list-group-item-action" href="#about-me">About Me</a></li>
             </ul>
             <ul class="inlineUl2 m-auto">
                 <li><a class="navHover list-group-item-action" href="#my-work">Work</a></li>
-                <li><a class="navHover list-group-item-action" href="#contactmeheader">Contact</a></li>
+                <li><a class="navHover list-group-item-action" href="#contactMeHeader">Contact</a></li>
                 <li><a class="navHover list-group-item-action" href="#about-me">About</a></li>
             </ul>
         </nav>
     </header>
 
+    <!--modals-->
+    <div id="responseModal" class="modal">
+        <div class="modalContent">
+            <span class="close" id="closeSecond">&times;</span>
+            <p id="entry" class="modalTextContent">Reach me at <a href='tel:2067140009'>(206)-714-0009</a></p>
+        </div>
+    </div>
+
     <main>
         <aside class="col-3 overflow-auto">
             <h1 class="mediaHeader">Anthony Ditore</h1>
-            <h2 id="contactMeHeader">Contact Me!</h2>
-            <img id="twins" src="assets/images/image.jpg" alt="me and my twin in Vegas">
-        </br>
-            <a class="resumeBtn btn btn-success" href="mailto:anthonyditore@gmail.com">Click here to send me an E-mail!</a>
-                
             
-        </br>
-            <article class="col align-items-center" id="resumeArticle">
+            <img id="twins" src="assets/images/image.jpg" alt="me and my twin in Vegas">
+
+            <article class="align-items-center m-0" id="resumeArticle">
                 <h2>Resume</h2>
                 <p>Link to my resume below!</p>
                 <div class="resume">
@@ -115,16 +119,17 @@
         </section>
     </main>
     <footer>
-        <nav class="navbar">
+        <nav id="contactMeHeader" class="navbar navbarFoot">
             <ul class="list-group-horizontal footerUl">
-                <li><a class="footerinline bi bi-envelope-fill" href="anthonyditore@gmail.com"></a></li>
-                <li><a class="footerinline bi bi-phone" href="phonenumber"></a></li>
+                <li><a class="footerinline bi bi-envelope-fill" href="mailto:anthonyditore@gmail.com"></a></li>
+                <li class="notYet specialA footerinline bi bi-phone"></li>
                 <li><a class="footerinline bi bi-github" href="https://github.com/aditore"></a></li>
                 <li><a class="footerinline bi bi-linkedin" href="https://www.linkedin.com/in/anthony-ditore-ab0636225/"></a></li>
             </ul>
         </nav>
         <h1 class= "specialheader2">Anthony Ditore</h1>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 </html>

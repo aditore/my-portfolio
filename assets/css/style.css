@@ -141,7 +141,7 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -158,7 +158,7 @@ aside {
 /*contact me form*/
 
 #contactMeHeader {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 form p {
@@ -277,6 +277,7 @@ article {
 }
 
 #resumeArticle {
+    
     height: auto;
     border-color: #b9C6ae;
     border-top-color: darkslategrey;
@@ -288,6 +289,9 @@ article {
 }
 /* footer */
 
+.specialA {
+    color: darkslategrey;
+}
 footer {
     position: static;
     bottom: 0;
@@ -301,7 +305,7 @@ footer {
 
 .footerinline {
     font-size: 60px;
-    margin: inherit;
+    
     padding-left: 0px;
     display: flex;
     align-items: end;
@@ -343,6 +347,7 @@ footer {
 
 /*twin and I*/
 #twins { 
+    
     border-radius: 50%;
     width: 75%;
     box-shadow: 0 0 5px 5px darkslategrey;
@@ -355,6 +360,32 @@ footer {
     
 }
 
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+    background-color: #b9C6ae;
+    margin: auto;
+    margin-top: 15%;
+    padding: 20px;
+    border: 2px solid darkslategrey;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 50px;
+    align-content: center;
+}
 /*media querey*/
 
 @media screen and (max-width: 1440px) {
@@ -362,9 +393,15 @@ footer {
         display: none;
     }
 
-    .navbar {
+    .navbarFoot {
         width: 100%;
-        justify-content: center;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .navbarHead {
+        width: 100%;
+        justify-content: flex-end;
+        margin: 0;
     }
     li {
         display: block;
@@ -407,6 +444,7 @@ footer {
     .inlineUl {
         display: flex;
         flex-direction: row;
+        margin: 0;
     }
     /*.footerinline {
         display: flex;
