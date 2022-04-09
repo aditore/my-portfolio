@@ -1,38 +1,21 @@
 let id = null;
 
 function moveImage() {
-    const twins = document.getElementById('twins');
-    let pos = 0;
+    const header = document.getElementById('specialHeaderAnimate');
+    let pos = 10;
 
     clearInterval(id);
-    id = setInterval(frame, 10);
+    id = setInterval(frame, 40);
     function frame() {
-        if (pos == 100) {
-            clearInterval(id);
-            moveImageReverse();
-        } else {
-            pos++;
-            twins.style.borderRadius = pos + '%';
-        }
-    }
-}
-
-function moveImageReverse() {
-    const twins = document.getElementById('twins');
-    let posB = 100;
-
-    clearInterval(id);
-    id = setInterval(frame, 10);
-    function frame() {
-        if (posB == 0) {
+        if (pos == 35) {
             clearInterval(id);
             moveImage();
         } else {
-            posB--;
-            twins.style.borderRadius = posB - '%';
+            pos++;
+            header.style.fontSize = pos + 'px';
         }
     }
-
 }
+
 
 moveImage();
