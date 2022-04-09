@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="cssreset" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -14,33 +15,29 @@
 <body>
     <header class="col-12">
         <h1 class="header specialheader1">Anthony Ditore</h1>
-        <h1 class="mediaHeader">Anthony Ditore</h1>
         <nav class="navbar">
             <ul class="inlineUl m-auto">
                 <li><a class="navHover list-group-item-action" href="#my-work">My Work</a></li>
                 <li><a class="navHover list-group-item-action" href="#contactmeheader">Contact Me</a></li>
                 <li><a class="navHover list-group-item-action" href="#about-me">About Me</a></li>
             </ul>
+            <ul class="inlineUl2 m-auto">
+                <li><a class="navHover list-group-item-action" href="#my-work">Work</a></li>
+                <li><a class="navHover list-group-item-action" href="#contactmeheader">Contact</a></li>
+                <li><a class="navHover list-group-item-action" href="#about-me">About</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <aside class="col-3 overflow-auto">
+            <h1 class="mediaHeader">Anthony Ditore</h1>
             <h2 id="contactMeHeader">Contact Me!</h2>
             <img id="twins" src="assets/images/image.jpg" alt="me and my twin in Vegas">
-            <form>
-                <p>
-                  <label for="username">Name:</label>
-                  <input class="entertext" type="text" placeholder="First and Last Name" />
-                </p>
-                <p>
-                  <label for="email">E-mail:</label>
-                  <input class="entertext" id="email" type="text" placeholder="me@example.com" />
-                </p>
-                <p>
-                  <button>Submit</button>
-                </p>
-            </form>
+        </br>
+            <a class="resumeBtn btn btn-success" href="mailto:anthonyditore@gmail.com">Click here to send me an E-mail!</a>
+                
+            
         </br>
             <article class="col align-items-center" id="resumeArticle">
                 <h2>Resume</h2>
@@ -118,15 +115,16 @@
         </section>
     </main>
     <footer>
-        <nav>
+        <nav class="navbar">
             <ul class="list-group-horizontal footerUl">
-                <li>e-mail:<a class="list-group-item-action footerinline" href="anthonyditore@gmail.com">anthonyditore@gmail.com</a></li>
-                <li>phone number:<a class="list-group-item-action footerinline" href="phonenumber">(206) 714-0009</a></li>
-                <li>GitHub:<a class="list-group-item-action footerinline" href="https://github.com/aditore">aditore</a></li>
-                <li>LinkedIn:<a class="list-group-item-action footerinline" href="https://www.linkedin.com/in/anthony-ditore-ab0636225/">Anthony Ditore</a></li>
+                <li><a class="footerinline bi bi-envelope-fill" href="anthonyditore@gmail.com"></a></li>
+                <li><a class="footerinline bi bi-phone" href="phonenumber"></a></li>
+                <li><a class="footerinline bi bi-github" href="https://github.com/aditore"></a></li>
+                <li><a class="footerinline bi bi-linkedin" href="https://www.linkedin.com/in/anthony-ditore-ab0636225/"></a></li>
             </ul>
         </nav>
         <h1 class= "specialheader2">Anthony Ditore</h1>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

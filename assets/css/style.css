@@ -64,12 +64,15 @@ h1 {
     margin: auto;
 }
 
+.inlineUl2 {
+    display: none;
+}
+
 .navHover:hover {
-    background-color: darkslategrey;
+    background-color: var(--backgroundcolor1);
     color: #b9C6ae;
     border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     transition: 0.5s;
 }
 
@@ -297,19 +300,19 @@ footer {
 }
 
 .footerinline {
-    padding-left: 40px;
+    font-size: 60px;
+    margin: inherit;
+    padding-left: 0px;
     display: flex;
     align-items: end;
     width: fit-content;
 }
 
 .footerinline:hover {
-    background-color: darkslategrey;
+    text-decoration: none;
     color: #b9C6ae;
     border-radius: 10px;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     transition: 0.5s;
 }
 
@@ -347,7 +350,7 @@ footer {
 
 #twins:hover {
     border-radius: 0;
-    transform: scale(2.0);
+    transform: scale(1.0);
     transition: 1s;
     
 }
@@ -355,9 +358,17 @@ footer {
 /*media querey*/
 
 @media screen and (max-width: 1440px) {
+    .specialheader2 {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
     li {
         display: block;
-        font-size: smaller;
+        
     }
 
     section {
@@ -393,15 +404,24 @@ footer {
         max-width: fit-content;
     }
 
-    .footerinline {
+    .inlineUl {
+        display: flex;
+        flex-direction: row;
+    }
+    /*.footerinline {
         display: flex;
         flex-direction: row;
         justify-content: end;
         padding: 0;
-    }
+    }*/
 
-    .footerinline:hover {
+    /*.footerinline:hover {
         margin: 0;
+    }*/
+
+    .footerUl {
+        justify-content: center;
+        align-items: center;
     }
 
     h3:hover {
@@ -421,9 +441,16 @@ footer {
         flex-direction: row;
     }
     
+    #contactMeHeader {
+        margin: 5px;
+    }
+    .navbar {
+        width: 100%;
+    }
+
     li {
         display: block;
-        font-size: smaller;
+        
     }
     section {
         padding-right: 0;
@@ -432,20 +459,27 @@ footer {
     aside {
         padding: 60px;
         min-width: 100%;
+        border-radius: 0%;
         border-style: solid;
         border-color: darkslategrey;
     }
 
     form {
         width: fit-content;
+        padding: 10px;
     }
 
     #twins {
+        transform: scale(1);
         flex-basis: content;
+        margin: 0;
     }
 
     #twins:hover {
+        border-radius: 50%;
         box-shadow: none;
+        transform: scale(1);
+        transition: 1s;
     }
 
     .specialheader1 {
@@ -457,13 +491,19 @@ footer {
     }
 
     .inlineUl {
+        display: none;
+    }
+
+    .inlineUl2 {
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: revert;
     }
 
     .mediaHeader {
         display: contents;
-        font-size: larger;
+        
         color: darkslategrey;
     }
   }
