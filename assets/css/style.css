@@ -3,6 +3,10 @@
     --backgroundcolor1: rgb(131, 156, 83);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,6 +14,7 @@ body {
     background-image: url(../images/food_truck.jpg); 
     background-size: cover;
     background-position: center;
+    box-sizing: border-box;
 }
 
 /* header in html contents */
@@ -110,7 +115,7 @@ a:hover {
 main {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+
 }
 
 h2 {
@@ -411,6 +416,10 @@ footer {
         max-width: none;
     }
 
+    main {
+        justify-content: center;
+    }
+
     .specialheader2 {
         display: none;
     }
@@ -436,7 +445,7 @@ footer {
   
     aside {
         padding: 20px;
-        min-width: 100%;
+        min-width: 66%;
         border-style: solid;
         border-color: darkslategrey;
     }
@@ -501,11 +510,15 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
-    header, main, footer {
+    header, footer {
         flex-direction: row;
-        width: 100%;
+        max-width: 100%;
     }
     
+    section {
+        width: auto;
+    }
+
     .col-7 {
         max-height: 500px;
     }
@@ -594,4 +607,21 @@ footer {
     .listpictures {
         padding: 0;
     }
+
+    .footerUl {
+        align-items: center;
+    }
+
+    #hide {
+        display: none;
+    }
   }
+
+@media screen and (max-width: 576px) {
+    
+    #twins {
+        transform: scale(0.75);
+    }
+
+
+}
