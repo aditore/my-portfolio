@@ -501,8 +501,9 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
-    header, main {
+    header, main, footer {
         flex-direction: row;
+        width: 100%;
     }
     
     .col-7 {
