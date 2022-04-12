@@ -302,13 +302,14 @@ article {
     color: darkslategrey;
 }
 footer {
+    max-height: fit-content;
     position: static;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 0;
     background-color: var(--backgroundcolor1);
 }
 
