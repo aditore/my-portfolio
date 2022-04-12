@@ -528,7 +528,7 @@ footer {
     main {
         justify-content: center;
     }
-    
+
     section {
         padding-right: 0;
         margin-left: 0;
@@ -594,5 +594,9 @@ footer {
     body {
         background-image: none;
         background-color: darkslategrey;
+    }
+
+    .listpictures {
+        padding: 0;
     }
   }
