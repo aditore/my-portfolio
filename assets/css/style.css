@@ -585,6 +585,7 @@ footer {
     }
 
     body {
-        width: fit-content;
+        background-image: none;
+        background-color: darkslategrey;
     }
   }
