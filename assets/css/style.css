@@ -123,6 +123,11 @@ h2 {
     width: fit-content;
 }
 
+.myWorkHeader2 {
+    background-color: darkslategrey;
+    color: #b9C6ae;
+}
+
 p {
     width: fit-content;
     line-height: 1.5;
@@ -265,6 +270,10 @@ h3:hover {
     justify-content: space-between;
 }
 
+.myWorkListGroup {
+    max-height: 500px;
+}
+
 /*section articles*/
 
 article {
@@ -389,6 +398,10 @@ footer {
 /*media querey*/
 
 @media screen and (max-width: 1440px) {
+    .col-7 {
+        max-width: none;
+    }
+
     .specialheader2 {
         display: none;
     }
@@ -479,6 +492,14 @@ footer {
         flex-direction: row;
     }
     
+    .col-7 {
+        max-height: 500px;
+    }
+
+    ul {
+        max-height: fit-content;
+    }
+
     #contactMeHeader {
         margin: 5px;
     }
