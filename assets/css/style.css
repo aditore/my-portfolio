@@ -618,10 +618,19 @@ footer {
   }
 
 @media screen and (max-width: 576px) {
-    
+    * {
+        max-width: 576px;
+    }
     #twins {
         transform: scale(0.75);
     }
 
 
+}
+
+@media screen and (max-width: 425px) {
+    * {
+        max-width: 425px;
+    }
+    
 }
