@@ -274,6 +274,10 @@ h3:hover {
     max-height: 500px;
 }
 
+.collab {
+    width: fit-content;
+}
+
 /*section articles*/
 
 article {
@@ -486,6 +490,10 @@ footer {
         padding-right: 10px;
         transition: 0.5s;
     }
+
+    .collab {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -565,5 +573,10 @@ footer {
         display: contents;
         
         color: darkslategrey;
+    }
+
+    .collab {
+        font-size: 20px;
+        line-height: 20px;
     }
   }
