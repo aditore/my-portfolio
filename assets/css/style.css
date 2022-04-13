@@ -15,6 +15,7 @@ body {
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
+    min-width: fit-content;
 }
 
 /* header in html contents */
@@ -599,10 +600,7 @@ footer {
         line-height: 20px;
     }
 
-    body {
-        background-image: none;
-        background-color: darkslategrey;
-    }
+    
 
     .listpictures {
         padding: 0;
@@ -617,20 +615,3 @@ footer {
     }
   }
 
-@media screen and (max-width: 576px) {
-    * {
-        max-width: 576px;
-    }
-    #twins {
-        transform: scale(0.75);
-    }
-
-
-}
-
-@media screen and (max-width: 425px) {
-    * {
-        max-width: 425px;
-    }
-    
-}
