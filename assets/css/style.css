@@ -349,6 +349,37 @@ footer {
     font-size: x-small;
 }
 
+.footerinline:hover {
+    cursor: pointer;
+}
+
+.toolTip {
+    position: relative;
+    display: inline-block;
+    border: var(--backgroundcolor1);
+    border-style: solid;
+}
+
+.toolTip .toolTipText {
+    font-size: 10px;
+    visibility: hidden;
+    width: fit-content;
+    background-color: darkslategrey;
+    text-align: center;
+    border-radius: 10%;
+    padding: 5px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    right: 50%;
+    margin-left: -30px;
+}
+
+.toolTip:hover .toolTipText {
+    visibility: visible;
+}
+
 /*images*/
 
 .listpictures {
@@ -485,9 +516,6 @@ footer {
         padding: 0;
     }*/
 
-    /*.footerinline:hover {
-        margin: 0;
-    }*/
 
     .footerUl {
         justify-content: center;
@@ -600,7 +628,9 @@ footer {
         line-height: 20px;
     }
 
-    
+    .navbarFoot {
+        justify-content: center;
+    }
 
     .listpictures {
         padding: 0;
